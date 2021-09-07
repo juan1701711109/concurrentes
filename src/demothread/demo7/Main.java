@@ -10,5 +10,7 @@ package demothread.demo7;
  * @author Lenovo
  */
 public class Main {
-    
+    public static void main(String[] args) {
+        
+    }
 }

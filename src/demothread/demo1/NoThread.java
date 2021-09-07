@@ -9,13 +9,13 @@ package demothread.demo1;
  *
  * @author Lenovo
  */
-public class MyThread {
+public class NoThread {
     
     private int cont= 0;
     private int id = 0;
     private OnChange theDaelegate = null;
     
-    public MyThread(int newId, OnChange newDelegate){
+    public NoThread(int newId, OnChange newDelegate){
         id = newId;
         theDaelegate = newDelegate;
     }

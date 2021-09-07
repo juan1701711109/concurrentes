@@ -17,10 +17,10 @@ public class Main {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        MyThread t1 = null;
-        MyThread t2 = null;
-        MyThread t3 = null;
-        MyThread.OnChange delegate = null;
+        NoThread t1 = null;
+        NoThread t2 = null;
+        NoThread t3 = null;
+        NoThread.OnChange delegate = null;
         
 //        delegate = (id,value) -> {
 //            System.out.println("Task: "+ id +" Cont: " + value);
@@ -31,15 +31,15 @@ public class Main {
 //        t2 = new NoThread(2, delegate);
 //        t3 = new NoThread(3, delegate);
 
-        t1 = new MyThread(1, (id, value) -> {
+        t1 = new NoThread(1, (id, value) -> {
             System.out.println("Task: "+ id +" Cont: " + value);
         });
         
-        t2 = new MyThread(2, (id, value) -> {
+        t2 = new NoThread(2, (id, value) -> {
             System.out.println("Task: "+ id +" Cont: " + value);
         });
         
-        t3 = new MyThread(3, (id, value) -> {
+        t3 = new NoThread(3, (id, value) -> {
             System.out.println("Task: "+ id +" Cont: " + value);
         });
         
